@@ -34,19 +34,19 @@ export default function Popular({ onChildValue }) {
   }, [dropdownOpen]);
 
   return (
-    <div className='popular w-full flex-wrap'>
+    <div className='w-full popular flex justify-center items-center flex-col'>
       <h1 onClick={() => setDropdownOpen(!dropdownOpen)} className='cursor-pointer hover:text-gray-800'>What’s popular right now?</h1>
 
-      <div className={`w-full ${dropdownOpen ? 'block' : 'hidden'}`}>
-        <ul className='list-items flex flex-col md:flex-row gap-5 justify-center items-center'>
-          <ListItem className="w-full border-2 border-[#6B5023]" value="ENGINEERING DAYS" />
-          <ListItem className="w-full border-2 border-[#6B5023]" value="BANGALORE STORIES" />
-          <ListItem className="w-full border-2 border-[#6B5023]" value="GOA DIARIES" />
-          <ListItem className="w-full border-2 border-[#6B5023]" value="NITK STUFFS" />
-          <ListItem className="w-full border-2 border-[#6B5023]" value="IIM THINGS" />
-          <ListItem className="w-full border-2 border-[#6B5023]" value="IIMB FACTS" />
-          <ListItem className="w-full border-2 border-[#6B5023]" value="SHAYARI" />
-          <ListItem className="w-full border-2 border-[#6B5023]" value="VIKAS MEENA" />
+      <div className={`w-full ${dropdownOpen ? 'block' : 'hidden'} my-6`}>
+        <ul className='list-items flex flex-col md:flex-row gap-2 justify-center items-center'>
+          <ListItem className="w-44 sm:w-52 p-2 border-2 border-[#6B5023]" value="ENGINEERING DAYS" />
+          <ListItem className="w-44 sm:w-56 p-2 border-2 border-[#6B5023]" value="BANGALORE STORIES" />
+          <ListItem className="w-44 p-2 border-2 border-[#6B5023]" value="GOA DIARIES" />
+          <ListItem className="w-44 p-2 border-2 border-[#6B5023]" value="NITK STUFFS" />
+          <ListItem className="w-44 p-2 border-2 border-[#6B5023]" value="IIM THINGS" />
+          <ListItem className="w-44 p-2 border-2 border-[#6B5023]" value="IIMB FACTS" />
+          <ListItem className="w-44 p-2 border-2 border-[#6B5023]" value="SHAYARI" />
+          <ListItem className="w-44 p-2 border-2 border-[#6B5023]" value="VIKAS MEENA" />
         </ul>
       </div>
     </div>

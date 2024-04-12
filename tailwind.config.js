@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        lato: ['var(--ff-lato)', 'sans'], // Replace 'var(--ff-lato)' with your CSS variable
+      },
+    },
   },
   plugins: [],
 }

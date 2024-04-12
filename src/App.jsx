@@ -1,14 +1,13 @@
-
 import Navbar from "./Navbar"
-import Popular from "./Popular"
-// import Story from "./Story"
+// import Popular from "./Popular"
+import Story from "./Story"
 
 function App(){
   return (
-    <div className="header">
+    <div className="w-full m-0">
       <Navbar/>
-      <Popular />
-      {/* <Story /> */}
+      {/* <Popular /> */}
+      <Story />
     </div>
   )
 }
